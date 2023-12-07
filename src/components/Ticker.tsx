@@ -22,7 +22,7 @@ export default function Ticker({ children, duration = 25, onMouseOver, onMouseLe
     useEffect(() => {
         for (let index = 0; index < children.length; index++) {
             const element = document.querySelector('[data-translate=each]')?.clientWidth
-            contentWidth += element;
+            contentWidth += element || 0;
 
         }
         setTickerContentWidth(contentWidth)
@@ -39,9 +39,9 @@ export default function Ticker({ children, duration = 25, onMouseOver, onMouseLe
 
     useEffect(() => {
         if (isInView && !animationControls) {
-            
+
             const controls = animate(scope.current, { x: tickerContentWidth ? tickerContentWidth * directionLeft : 0 }, { ease: 'linear', duration, repeat: Infinity });
-            console.log(controls.duration,'check')
+            console.log(controls.duration, 'check')
             controls.play()
             setAnimationControls(controls)
         }
@@ -61,7 +61,7 @@ export default function Ticker({ children, duration = 25, onMouseOver, onMouseLe
 
 
 
-    
+
     return (
         <div ref={tickerRef} className='flex gap-3 overflow-hidden'>
             <div ref={scope} onMouseEnter={onMouseOver} onMouseLeave={onMouseLeave} className="flex " >

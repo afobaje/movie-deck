@@ -148,7 +148,6 @@
   background-color: #f25e35;
 }
 
-
 .board {
   position: relative;
 }
@@ -164,7 +163,6 @@
   content: "";
   border-left: 1px dashed blue;
 }
-
 
 .values-list {
   height: 100%;
@@ -191,7 +189,7 @@
 .values {
   padding: 2rem 6rem;
   /* margin: 2rem 0rem; */
-  margin:40px auto;
+  margin: 40px auto;
   width: 80vw;
   border-radius: 45px;
   min-height: 90vh;
@@ -203,7 +201,6 @@
   height: 100%;
   color: rgb(237, 233, 233);
 }
-
 
 .content {
   flex: 1;
@@ -237,50 +234,61 @@
   height: calc(100% - 4.5rem);
   border-left: 2px dashed gray;
   border-width: thin;
-  
 }
 
-.esc{
-  all:unset;
-  cursor:pointer;
+.esc {
+  all: unset;
+  cursor: pointer;
 }
-.movie-list{
-  grid-template-rows: repeat(auto-fill,22rem);
+.movie-list {
+  grid-template-rows: repeat(auto-fill, 22rem);
 }
-.movie-card:hover{
+.movie-card:hover {
   transform: scale(1.05);
   transition: all 300ms ease-in-out;
   /* box-shadow: 6px 4px 4px 0px rgb(126, 122, 122); */
 }
-.spin{
+.spin {
   animation: spin 2s linear infinite forwards;
 }
 
 @keyframes spin {
- 0%{
-  rotate:0deg;
- }
- 100%{rotate:360deg;}
-
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
 
 
+
 @media screen and (width<768px) {
-  .movie-list{
-    grid-template-rows: repeat(auto-fill,24rem);
+  .movie-list {
+    grid-template-rows: repeat(auto-fill, 24rem);
   }
-  .values{
-    padding:2rem 1rem;
-    width:90vw;
+  .values {
+    padding: 2rem 1rem;
+    width: 90vw;
     min-height: auto;
   }
-  .values-wrapper{
+  .values-wrapper {
     justify-content: center;
   }
-  .gle{
+  .gle {
     flex-basis: 90%;
   }
-  .number{
+  .number {
     flex-basis: 25%;
+  }
+}
+
+
+@media screen and (width>800px) {
+  .gle {
+    flex-basis: 100%;
+  }
+  .values{
+    min-height: auto;
   }
 }

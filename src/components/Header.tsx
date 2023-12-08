@@ -5,22 +5,13 @@ import { FiSearch } from 'react-icons/fi'
 import SearchDialogue from './SearchDialogue'
 
 export default function Header() {
-    const [searchValue, setSearchValue] = useState('')
-
-    const handleSearch = (e: any) => setSearchValue(e.target.value)
-
-
-    function handleSubmit() {
-        setSearchValue('')
-        alert(searchValue)
-
-    }
+   
 
 
     return (
         <header>
             <nav className='flex justify-between px-6 py-6'>
-                <div className="logo"><Link href='/' className='text-xl font-bold'>MovieHub</Link></div>
+                <div className="logo"><Link href='/' className='text-xl font-bold'>MovieHubb</Link></div>
                 {/* <div className="searchbar flex ">
                     <input type="text" value={searchValue} onChange={handleSearch} className='border  outline-none border-gray-300 px-3 py-2  rounded-l-lg' />
                     <button onClick={handleSubmit} className='bg-gray-300 inline-flex flex-col justify-center items-center  px-3  rounded-r-lg' ><FiSearch className=' text-slate-700' /></button>

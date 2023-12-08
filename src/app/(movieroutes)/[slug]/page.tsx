@@ -34,7 +34,7 @@ export default function Movie({ params }: { params: { slug: string } }) {
   return (
 
 
-    <section className="flex flex-col md:flex-row">
+    <section className="flex flex-col ">
       {isLoading ? <div className=' flex h-screen justify-center items-center '>
         <PiSpinnerBold className='w-10 h-10 spin' />
       </div> :

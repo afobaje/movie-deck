@@ -129,7 +129,7 @@ export default function HomePage({ movies }: any) {
         </article>
         <section className="values font-recoleta">
 
-          <h2 className='text-[rgb(237,233,2333)] text-2xl pl-4 md:pl-0 py-4 md:py-10 flex justify-center items-center'>Download a movie in 3 simple steps</h2>
+          <h2 className='text-[rgb(237,233,2333)] text-xl md:text-2xl pl-4 md:pl-0 py-4 md:py-10 flex justify-center items-center'>Download a movie in 3 simple steps</h2>
           <div className="values-wrapper">
             <ul className="gle">
               <li className="step">
@@ -137,7 +137,7 @@ export default function HomePage({ movies }: any) {
                   <span>1</span>
                 </div>
                 <div className="content">
-                  <h2 className="text-2xl">Click on any movie you would love to watch/stream</h2>
+                  <h2 className="text-xl md:text-2xl">Click on any movie you would love to watch/stream</h2>
                 </div>
               </li>
               <li className="step">
@@ -145,7 +145,7 @@ export default function HomePage({ movies }: any) {
                   <span>2</span>
                 </div>
                 <div className="content">
-                  <h2 className="text-2xl">Click the get this movie button</h2>
+                  <h2 className="text-xl md:text-2xl">Click the get this movie button</h2>
                 </div>
               </li>
               <li className="step">
@@ -153,7 +153,7 @@ export default function HomePage({ movies }: any) {
                   <span>3</span>
                 </div>
                 <div className="content">
-                  <h2 className=" text-2xl" >Select any link among the number
+                  <h2 className="text-xl md:text-2xl" >Select any link among the number
                     of links provided for you</h2>
 
                 </div>

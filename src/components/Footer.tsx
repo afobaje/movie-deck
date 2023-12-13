@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className='flex flex-col min-h-[30vh] bg-[#2363eb]'>
       <div className="flex text-white flex-col md:flex-row p-10 gap-8 md:gap-0 justify-evenly">
-        <span className="logo  text-4xl">Moviedeck</span>
+        <span className="logo  text-4xl">MovieHubb</span>
         <ul className='flex flex-col gap-3'>
           <li>Contribute</li>
           <li>

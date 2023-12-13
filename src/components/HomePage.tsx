@@ -83,7 +83,7 @@ export default function HomePage({ movies }: any) {
 
     <main className=''>
       <header className='py-5  flex justify-between mx-5 md:mx-10'>
-        <Link href='/' className="logo  font-extrabold text-xl">MovieHub</Link>
+        <Link href='/' className="logo  font-extrabold text-xl">MovieHubb</Link>
         <Link href='/movies' className={clsx('bg-[#2563eb]  font-normal shadow text-white px-4 outline-none  py-2 rounded ')}>Get Started</Link>
         {/* <button className='bg-blue-500 text-white font-bold rounded px-4 py-2 shadow'>Get Started</button> */}
       </header>

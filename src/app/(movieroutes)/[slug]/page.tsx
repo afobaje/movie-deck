@@ -53,7 +53,7 @@ export default function Movie({ params }: { params: { slug: string } }) {
             </div>
             <div className='flex flex-col gap-2 mt-10 h-[50vh]'>
               {download && links !== null && links.map((val: any, i: any) => <Link target='_blank' className=' underline truncate text-[#2563eb]' key={i} href={val}>{val}</Link>)}
-              {download && links == null ? <p>I am sorry, we checked everywhere but we cant give you this file currently, kindly check in later</p> : null}
+              {download && links == null ? <p>I am sorry, we checked everywhere but we cant give you this file currently, kindly check in later or go through this <Link className='hover:underline hover:text-[#2563eb]' target='_blank' href={data.DOWNLOAD}>link</Link></p> : null}
             </div>
           </div>
         </div>

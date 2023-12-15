@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 import useSwr from 'swr'
 import { Button } from '@/components'
 import { useRouter } from 'next/navigation'
-import { MoviesProps } from '../../../../Types'
-import { getAllMovies, getMovies } from '../../../../Services'
+import { MoviesProps } from '../../../../../Types'
+import { getAllMovies, getMovies } from '../../../../../Services'
 import Image from 'next/image'
 import { PiSpinnerBold } from 'react-icons/pi'
 import Link from 'next/link'
@@ -34,21 +34,21 @@ export default function Movie({ params }: { params: { slug: string } }) {
   return (
 
 
-    <section className="flex flex-col ">
+    <section className="flex flex-col font-miltea ">
       {isLoading ? <div className=' flex h-screen justify-center items-center '>
         <PiSpinnerBold className='w-10 h-10 spin' />
       </div> :
         <div className='flex flex-col md:flex-row min-h-[50vh] justify-evenly gap-3 px-10'>
 
           <div className="img-container  flex md:w-1/2 h-[70vh]">
-            <img src={data?.imgSrc} className='w-full rounded-md h-full ' alt="" />
+            <img src={data?.imgSrc} className='w-full object-contain bg-slate-200 rounded-md h-full ' alt="" />
           </div>
           <div className='p-4 md:w-1/2 flex gap-5 justify-center  flex-col'>
             <h2>{data?.title}</h2>
             <p>{data?.description}</p>
             <div>
 
-              <button disabled={loading} onClick={handleDownload} className={clsx('bg-[#2563eb] text-white p-3 rounded')}>Download</button>
+              <button disabled={loading||download} onClick={handleDownload} className={clsx(' text-white p-3 rounded',loading||download?'bg-blue-300':'bg-[#2563eb]')}>{loading?'Loading':'Download'}</button>
               {/* <Button handleClick={() => setDownload(true)} text='Download' classStyles='font-semibold' fullWidth={true} /> */}
             </div>
             <div className='flex flex-col gap-2 mt-10 h-[50vh]'>

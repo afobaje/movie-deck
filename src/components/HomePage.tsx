@@ -121,7 +121,7 @@ export default function HomePage({ movies }: any) {
             <h3 className='text-3xl'>Over <span className='text-blue-600'>350</span>   downloads <br /> and streams daily.</h3>
           </div>
         </article>
-        <article className={clsx('h-[40vh] px-5 md:px-0 md:h-screen bg-[#8b98e8] flex justify-center items-center')}>
+        <article className={clsx('h-[40vh] font-miltea px-5 md:px-0 md:h-screen bg-[#8b98e8] flex justify-center items-center')}>
           <div ref={check} style={{ opacity: isInView ? 1 : 0.5, transitionDelay: '100ms' }} className={clsx('text-3xl deviate justify-center  leading-relaxed text-center')}>
             <p className='text-xl md:text-3xl'>Deviate from the norm, be up to date, check out the latest</p>
             <p className='text-xl md:text-3xl'>movie, documentary and sports flash in a jiffy</p>

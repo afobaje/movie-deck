@@ -17,9 +17,11 @@ export default function MovieCatalogue() {
 
     const getKey: SWRInfiniteKeyLoader = (pageIndex, previousPage) => {
         if (!previousPage) {
+            // return `http://localhost:3002/?page=${pageIndex+1}&limit=16`
             return `https://movie-box-production.up.railway.app/?page=${pageIndex + 1}&limit=16`
         }
         if (previousPage && previousPage.next !== undefined) {
+            // return `http://localhost:3002/?page=${previousPage.next.page}&limit=16`
             return `https://movie-box-production.up.railway.app/?page=${previousPage.next.page}&limit=16`
         }
     }

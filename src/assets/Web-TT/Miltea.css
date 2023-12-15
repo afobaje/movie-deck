@@ -1,0 +1,11 @@
+/* Webfont: Miltea */@font-face {
+    font-family: 'Miltea';
+    src: url('Miltea.eot'); /* IE9 Compat Modes */
+    src: url('Miltea.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Miltea.woff') format('woff'), /* Modern Browsers */
+         url('Miltea.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

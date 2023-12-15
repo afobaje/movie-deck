@@ -40,7 +40,7 @@ export default function MovieDialogue({ movie }: { movie: MoviesProps }) {
 
     return (
         <>
-            <button className='text-white mt-5 py-3 w-full rounded-lg text-xl font-semibold bg-[#2563eb]' onClick={openModal}>View More</button>
+            <button className='text-white font-miltea mt-5 py-3 w-full rounded-lg text-xl font-semibold bg-[#2563eb]' onClick={openModal}>View More</button>
             {/* <Button fullWidth={true} classStyles='ml-[18px]' text='View More' handleClick={openModal} /> */}
 
             <div className=''>
@@ -70,10 +70,10 @@ export default function MovieDialogue({ movie }: { movie: MoviesProps }) {
                                     leaveTo="opacity-0 scale-95"
                                 >
                                     <Dialog.Panel>
-                                        <div className="flex mt-10 md:mt-0 md:h-screen  justify-center items-center">
+                                        <div className="flex font-miltea mt-10 md:mt-0 md:h-screen  justify-center items-center">
                                             <div className=" bg-white h-auto rounded-xl md:h-[80vh] max-w-[80vw] md:max-w-[70vw] grid grid-cols-1 md:grid-cols-2">
                                                 <div className="img flex w-full md:h-[80vh] relative  ">
-                                                    <img src={movie.imgSrc} className='flex md:rounded-s-lg   md:h-full w-full' alt="" />
+                                                    <img src={movie.imgSrc} className='flex md:rounded-s-lg  object-contain md:h-full w-full' alt="" />
                                                 </div>
                                                 <div className="details flex-col px-6 py-4 flex gap-5">
                                                     <div className='hidden md:flex justify-end'><button onClick={closeModal}><GrClose /></button></div>
@@ -86,7 +86,7 @@ export default function MovieDialogue({ movie }: { movie: MoviesProps }) {
                                                         <p className=" ">{movie.description}</p>
                                                     </div>
                                                     <div className="flex mt-3 flex-col">
-                                                        <Link href={`${movie.ID}`} className='bg-[#2563eb] inline-flex justify-center text-white rounded-xl p-3'>GET THIS MOVIE</Link>
+                                                        <Link href={`movies/${movie.ID}`} className='bg-[#2563eb] inline-flex justify-center text-white rounded-xl p-3'>GET THIS MOVIE</Link>
                                                     </div>
                                                     {/* <div className=" flex flex-col gap-3">
                                                         <p className='font-bold'>Link</p>

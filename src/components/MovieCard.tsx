@@ -13,11 +13,11 @@ type MovieCardProps= {
 
 export default function MovieCard({ movie }: MovieCardProps) {
     return (
-        <div  className={clsx('movie-card flex flex-col justify-between  gap-2  ' )}>
+        <div  className={clsx('movie-card font-miltea flex flex-col justify-between  gap-2  ' )}>
 
             <div className='rounded-md h-[200px] '>
 
-                <img src={movie.imgSrc} className='w-full  h-full hover:rounded-none  transition-all rounded-md' alt={movie.description} />
+                <img src={movie.imgSrc} className='w-full  h-full hover:rounded-none object-contain bg-slate-200 transition-all rounded-md' alt={movie.description} />
             </div>
             <div className='p-4 flex flex-col items-center justify-center'>
                 <p className='px-3 font-medium'>{movie.title}</p>
